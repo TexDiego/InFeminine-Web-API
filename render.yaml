@@ -1,0 +1,13 @@
+﻿services:
+  - type: web
+    name: infeminine-api
+    env: dotnet
+    plan: free
+    branch: main
+    buildCommand: dotnet build InFeminine.WebApi/InFeminine.WebApi.csproj
+    startCommand: dotnet run --project InFeminine.WebApi/InFeminine.WebApi.csproj --urls=http://0.0.0.0:10000
+    envVars:
+      - key: GOOGLE_APPLICATION_CREDENTIALS
+        value: /etc/secrets/gcs-key.json
+      - key: GoogleCloud__BucketName
+        value: seu-nome-do-bucket
