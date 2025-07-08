@@ -10,4 +10,4 @@
       - key: GOOGLE_APPLICATION_CREDENTIALS
         value: /etc/secrets/gcs-key.json
       - key: GoogleCloud__BucketName
-        value: seu-nome-do-bucket
+        value: infeminine-admin
