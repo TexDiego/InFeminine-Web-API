@@ -1,7 +1,7 @@
 ﻿services:
   - type: web
     name: infeminine-api
-    env: dotnet
+    runtime: dotnet
     plan: free
     branch: main
     buildCommand: dotnet build InFeminine.WebApi/InFeminine.WebApi.csproj
